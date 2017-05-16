@@ -63,7 +63,7 @@ def getApiOnCms(url, cmsLogin, cmsPassword):
         response = requests.get(
             url=url,
             headers={
-                "Authorization": "Basic YXBpOmFwaQ==",
+                "Authorization": "", #Add your authorization
                 "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
             },
             auth=(cmsLogin, cmsPassword),
