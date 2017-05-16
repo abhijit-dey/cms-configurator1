@@ -81,7 +81,7 @@ def postApiOnCms(url, cmsLogin, cmsPassword):
         response = requests.post(
             url=url,
             headers={
-                "Authorization": "Basic YXBpOmFwaQ==",
+                "Authorization": "", #Add your authorization
                 "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
             },
             auth=(cmsLogin, cmsPassword),
@@ -98,7 +98,7 @@ def delApiOnCms(url, cmsLogin, cmsPassword):
         response = requests.delete(
             url=url,
             headers={
-                "Authorization": "Basic YXBpOmFwaQ==",
+                "Authorization": "", #Add your authorization
                 "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
             },
             auth=(cmsLogin, cmsPassword),
@@ -115,7 +115,7 @@ def putApiOnCms(url, cmsLogin, cmsPassword, field):
         response = requests.put(
             url=url,
             headers={
-                "Authorization": "Basic YXBpOmFwaQ==",
+                "Authorization": "", #Add your authorization
                 "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
             },
             auth=(cmsLogin, cmsPassword),
